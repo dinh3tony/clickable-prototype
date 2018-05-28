@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px red solid;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    margin: 20px;
+    height: 100px;
+}
+
+.nav_bar {
+    width: 70%;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    left: 325px;
+}
+
+.sidebar {
+    width: 25%;
+    margin: 20px;
+    min-height: 250px;
+    /* position: relative;
+    bottom: 40px; */
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.checkbox label {
+    margin: 5px;
+}
+.main_content {
+    width: 70%;
+    min-height: 450px;
+    display:inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 325px;
+    bottom: 280px;
+    
+}
