@@ -46,7 +46,6 @@
 }
 
 .box {
-    display: inline-block;
     width: 40%; 
     margin: 10px;
 }
@@ -60,4 +59,12 @@
 
 .in {
     color: black;
+}
+
+.confirm {
+    margin: 20px;
+}
+
+.home {
+    text-align: right;
 }

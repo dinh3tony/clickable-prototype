@@ -35,6 +35,10 @@
     //     });
     // });
 
+    $('.button1').click(function() {
+        alert('Sorry but this item is no longer available.')
+    })
+
     $( "img" ).click(function() {
   $(this).animate({ "height": "+=150px", "width": "+=150px" }, "slow" );
 });
@@ -176,7 +180,7 @@ $('.small6').click(function(){
                     <a href='https://youtu.be/Qvez47mf5K0'> Demo of the Product</a>
                 </div>
                 <div class='button'>
-                    <button type='submit' onclick="myFunction()" class='btn btn-default'>Add to cart</button>
+                    <button type='submit' class='btn btn-default button1'>Add to cart</button>
                 </div>
             </div>
         </div>

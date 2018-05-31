@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="cart1.css" />
     <script src="main.js"></script>
@@ -17,6 +17,17 @@
     <!-- Latest compiled and minified JavaScript --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('.look').click(function () {
+                var first = $('.fname').val();
+                var last = $('.lname').val();
+                alert('Sorry ' + first + ' ' + last + ', our website is not up and running at this time. Down for maintenance. Please come back in the near future.');
+            })
+
+        })
+    
+    </script>
 
 </head>
 <body>
@@ -27,6 +38,7 @@
             <div class='welcome text-center'> Welcome, <span>Homer Simpson</span></div>
         </div>
         <h2 class='text-center'>Your Cart</h2>
+        <div class='home'><a href='C:\Dev\Clickable Prototype\homepage.html'>Marketplace</a></div>
         <table class="table text-center table-responsive table-hover">
             <thead>
                 <tr>
@@ -37,17 +49,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><img src='space_cruiser 2.png' alt='space_cruiser' class='pics img-thumbnail'>Space Cruiser</td>
+                    <td><img src='space_cruiser 2.png' alt='space_cruiser' class='pics img-thumbnail'> <a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'>Space Cruiser</a></td>
                     <td>1</td>
                     <td> $10000</td>
                 </tr>
                 <tr>
-                    <td><img src='meeseeks.jpg' alt='meeseeks' class='pics img-thumbnail'>Meeseeks Box</td>
+                    <td><img src='meeseeks.jpg' alt='meeseeks' class='pics img-thumbnail'><a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'>Meeseeks Box</a></td>
                     <td>1</td>
                     <td> $3000</td>
                 </tr>
                 <tr class="text-danger">
-                    <td><img src='combat_suit.jpg' alt='combat_suit' class='pics img-thumbnail'>Combat Suit</td>
+                    <td><img src='combat_suit.jpg' alt='combat_suit' class='pics img-thumbnail'><a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'>Combat Suit</a></td>
                     <td> 3 </td>
                     <td> $18000</td>
                 </tr>
@@ -62,11 +74,11 @@
         <div class='ship text-center'><p> Shipping Information </p></div>
         <div class="form-group box">
             <label for="inputfirst" class='forms in'>First Name</label>
-            <input type="name" class="form-control" id="inputfirst" placeholder="First_Name">
+            <input type="fname" class="fname form-control" id="inputfirst" placeholder="First_Name">
         </div>
         <div class="form-group box">
             <label for="inputlast" class='forms in'>Last Name</label>
-            <input type="name" class="form-control" id="last" placeholder="Last_Name">
+            <input type="lname" class="lname form-control" id="last" placeholder="Last_Name">
         </div>
         <div class="form-group box">
             <label for="inputAddress" class='forms in'>Address</label>
@@ -84,6 +96,8 @@
             <label for="inputZip" class='forms in'>Zip Code</label>
             <input type="zipcode" class="form-control" id="inpuZip" placeholder="Zipcode">
         </div>
-    
+        <div class='confirm'>
+            <button type='submit' class='look btn btn-danger'>Confirm Your Purchase</button>
+        </div>
 </body>
 </html>
