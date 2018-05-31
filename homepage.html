@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Secure-List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -14,39 +14,76 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript --> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.find').click(function() {
+            alert("You can't search at this time!")
+        });
+
+        $('.look').click(function() {
+            alert("You better choose the right store!")
+        });
+
+        $('.contacts').click(function() {
+            alert("The only person you need to contact is me!")
+        });
+        
+        $('.faq').click(function() { 
+            alert("Your questions can just be directed to me when we talk.")
+        });
+
+        $('.img1').hover(function(){
+            $(this).attr("src","rick_mad.gif");
+        }, function(){
+            $(this).attr("src","sandy.png");
+        });
+
+        $('.description2').click(function( ) {
+            alert("Don't click on this little loser. He is still an amateur")
+        })
+
+
+
+    })
+    </script>
 </head>
 <body>
-    <div class='container'>
-        <div class='header'>
+    <div class='container col-lg-12 col-md-12 col-sm-12'>
+        <div class='header hs-12'>
             <h1 class='text-center'>Secure-List</h1>
             <form class='form-inline text-center'>
-                <div class='form-group'>
-                    <label  for='Email'>Email address</label>
-                    <input type='email' class="form-control" id='Email' placeholder='Email'>
+                <div class='login'>
+                    <div class='form-group'>
+                        <label  for='Email'>Email address</label>
+                        <input type='email' class="form-control" id='Email' placeholder='Email'>
+                    </div>
+                    <div class='form-group'>
+                        <label class='sr-only' for='Password'>Password</label>
+                        <input type="password" class="form-control" id='Password' placeholder="Password">
+                    </div>
+                    <div class='checkbox'>
+                        <label>
+                        <input type='checkbox'> Remember me
+                        </label>
+                    </div>
+                    <button type='submit' class='btn btn-default'>Sign in</button>
                 </div>
-                <div class='form-group'>
-                    <label class='sr-only' for='Password'>Password</label>
-                    <input type="password" class="form-control" id='Password' placeholder="Password">
-                </div>
-                <div class='checkbox'>
-                    <label>
-                    <input type='checkbox'> Remember me
-                    </label>
-                </div>
-                <button type='submit' class='btn btn-default'>Sign in</button>
             </form>
 
             
         </div>
         <div class='nav_bar'>
-            <a class='col-lg-3 col-md-3 col-sm-3 col-xs-12' href="https://www.google.com"> Home </a>
-            <a class='col-lg-3 col-md-3 col-sm-3 col-xs-12' href="https://www.google.com"> About</a>
-            <a class='col-lg-3 col-md-3 col-sm-3 col-xs-12' href="https://www.google.com"> Help / FAQ</a>
-            <a class='col-lg-3 col-md-3 col-sm-3 col-xs-12' href="https://www.google.com"> Contacts </a>
+            <div class='nav ls-12 ms-4 ss-12 xxs-12'><a href="file:///C:/Dev/Clickable%20Prototype/homepage.html"> Home </a></div>
+            <div class='nav ls-12 ms-4 ss-12 xxs-12'><a  href="https://www.google.com"> About</a></div>
+            <div class='nav ls-12 ms-4 ss-12 xxs-12'><a  href="file:///C:/Dev/Clickable%20Prototype/homepage.html"> Help/FAQ</a></div>
+            <div class='nav ls-12 ms-4 ss-12 xxs-12'><a  href="file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html"> Contacts </a></div>
+           
+            
         </div>
-        <div class='sidebar'>
+        <div class='sidebar ls-4 ms-0 sm-0 xm-0'>
             <h3>Search by Product</h3>
             <div class='search_bar'>
                 <input type='text' class='form-inline' placeholder='Search'>
@@ -70,21 +107,80 @@
                         Highest to Lowest $$
                     </label>
                 </div>
-                <button type='submit' class='btn btn-danger'>Submit</button>
+                <button type='submit' class='find btn btn-danger'>Submit</button>
             </div>
             <h3>Search by Store</h3>
             <div class='search_bar'>
                 <input type='text' class='form-inline' placeholder='Search'>
-                <button type='submit' class='btn btn-danger'>Submit</button>
+                <button type='submit' class='look btn btn-danger'>Submit</button>
             </div>
         </div>
-        <div class='main_content'>
-            <h1>Featured by Stores</h1>
-            <div class='subcontents'></div>
-            <div class='subcontents'></div>
-            <div class='subcontents'></div>
-            <div class='subcontents'></div>
-            <div class='subcontents'></div>
+        <div class='main_content ss-12 '>
+            <p>$ = $5-$10</p>
+            <div class='main_header'>
+                <h1>Featured Stores</h1>
+                <div class='cart'>
+                    <img src='shopping_cart.png' alt='cart'>
+                    <p> Your Cart</p>
+                </div>
+
+            </div>
+            
+            <div class='subcontents ms-6 sm-12'>
+                <a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'><h3>Morty's</h3></a>
+                <img src='Morty.png' alt='Morty'>
+                <p class='description'>Welcome to my shop. Ummm... I sell random things that I find on my adventures. Nothing too crazy or anything that is too expensive.
+                ohhh geez! I don't know what else to say or do. Oh man, Rick! Just look at my things man and get on with it.
+                </p>
+                <div class='price'>Price: $$$ </div>
+                <div class='rating'>Ratings: 4.0 stars</div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                    <a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'><h3>Sandy's Texas Haul</h3></a>
+                <img class='img1'src='Sandy.png' alt='Sandy'>
+                <p class='description1'>Howdy there! I reckon you are looking for nice things from the land O Texas.There is more than you can shake a stick at in my shop.
+                There are plenty of things that you can look for here!. Please feel free to look around and ask me if you need help! I will be happy to oblige. 
+                </p>
+                <div class='price'>Price: $$ </div>
+                <div class='rating'>Ratings: 4.5 stars</div>
+
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <h3 class='title1'>Dexter's Laboratory</h3>
+                <img class='img2'src='dexter.jpg' alt='Dexter'>
+                <p class='description2'> I am Dexter. The genius behind this shop! I am selling all of my inventions that I have created over the years! HAHA! Since I am a genius,
+                I can also invent something out of your request. Things that can turn people into animals or have to do with world domination! 
+                </p>
+                <div class='price'>Price: $$$$ </div>
+                <div class='rating'>Ratings: 1.5 stars</div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <h3 class='title2'>Johnny B's</h3>
+                <img class='img3'src='bjon.jpg' alt='Johnny Bravo'>
+                <p class='description3'>Woah mama! I got my own shop! This is where you can get all the great hair products that you see me use. This is the best you can get
+                and my momma has helped me get this shop up and going. Get it and look like me!
+                </p>
+                <div class='price'>Price: $$$ </div>
+                <div class='rating'>Ratings: 2.5 stars</div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <h3 class='title3'>The Doll House</h3>
+                <img class='img4'src='rats.jpg' alt='Angelica'>
+                <p class='description4'> Hi, I am Angelica Pickles! You can call me Queen Angelica if you want. I am the proud owner of this shop. You can get all the things
+                that this beautiful queen has used. You can buy all the old things that I don't want anymore. You can remember me with all these things. </p>
+                <div class='price'>Price: $ </div>
+                <div class='rating'>Ratings: 3.0 stars</div>
+
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <a href='file:///C:/Dev/Clickable%20Prototype/Ricks_Emporium.html'><h3>Rick's Emporium</h3></a>
+                <img src='Rick.jpg' alt='Rick'>
+                <p class='description'>I am Rick from Earth C-137. I created this shop for any being who wants to buy any inventions that will fill their desires. I have 
+                anything you can think of. Only one rule when you buy is that you can't be part of the f*****g goverment. 
+                </p>
+                <div class='price'>Price: $$ x 1000 </div>
+                <div class='rating'>Ratings: 0.5 stars</div>
+            </div>
         </div>
         <div class='footer'></div>
     </div>

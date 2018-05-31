@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px solid red;
+}
+
+.container {
+    background: radial-gradient(maroon,white,black);
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.welcome {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.welcome span {
+    color: lightblue;
+}
+
+.table {
+    background-color:black;
+    color: maroon;
+}
+
+.head {
+    color:black;
+    background-color:white;
+}
+
+.container h2 {
+    color: maroon;
+}
+
+.pics {
+    width: 100px;
+    object-fit: scale-down;
+}
+
+.forms {
+    color: white;
+}
+
+.box {
+    display: inline-block;
+    width: 40%; 
+    margin: 10px;
+}
+
+.ship {
+    color: maroon;
+    font-weight: bold;
+    font-size:30px;
+    background-color: grey;
+}
+
+.in {
+    color: black;
+}

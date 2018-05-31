@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rick Sanchez</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="Rick's_backup.css" />
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <!-- Optional theme --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+      var clicks = 0;
+    function myFunction() {
+
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    }
+
+    $(document).ready(function(){
+    //     $("img").click(function(){
+    //     $(this).animate({
+    //         height: '550px',
+    //         width: '550px'
+    //     });
+    // });
+
+    $( "img" ).click(function() {
+  $(this).animate({ "height": "+=150px", "width": "+=150px" }, "slow" );
+});
+
+$('.small1').click(function(){
+  $('.smaller1').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+
+$('.small2').click(function(){
+  $('.smaller2').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+
+$('.small3').click(function(){
+  $('.smaller3').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+ 
+$('.small4').click(function(){
+  $('.smaller4').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+
+$('.small5').click(function(){
+  $('.smaller5').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+
+$('.small6').click(function(){
+  $('.smaller6').animate({ "height": "-=150px" , "width": "-=150px"}, "slow" );
+});
+     
+});  
+
+    
+    
+    </script>
+</head>
+<body>
+    <div class='container col-lg-12 col-md-12 col-sm-12 '>
+
+        <div class='header'>
+            <h1 class='intro text-center'>Rick's Emporium</h1>
+        </div>
+        <div class='main1'>
+            <p class='intro'> This is my shop for my crazy and not-so-crazy inventions. You will find everything you need here. From things to talk to squirrels to things that you can eliminate certain beings that
+            you hate too. Pick whatever you want, all the prices are firm. This is the best price you can get in any galaxy or universe. Actually, these inventions can only be bought here so this is the only place you 
+            can find these inventions for this price. Remember, no affiliations with the government. I have the government. Seriously though, don't tell the government I am here. I am too good to be a part of their plan.
+            I will not take any schmeckles. Take that crap out of here. Flurbos are accepted.
+            </p>     
+        </div>
+        <div class='Inventions'>
+            <h1>My Inventions</h1>
+            <div class='cart'>
+                <div class='home'><a href='C:\Dev\Clickable Prototype\homepage.html'>Marketplace</a></div>
+                <img src='shopping_cart.png' alt='cart'>
+                <p> Your Cart(<a id="clicks">0</a>)</p>
+            </div>
+        </div>
+        <div class='main2'>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small1'><h2>Cognition Amplifier</h2></div>
+                <img class='smaller1' src='cog_amp.png' alt='cog_amp'>
+                <p class='description'> IQ enhancing helmet that can increase the intelligence quotient of anything that wears it.
+                </p>
+                <div class='price'>Price: $4000 </div>
+                <div class='demo'>
+                    <a href='https://youtu.be/g045Db3Fpmk?t=39'>Demo of the Product</a>
+                </div>
+                <div class='button'>
+                        <button type='submit' onclick="myFunction() " class='btn btn-default'>Add to Cart</button>
+                </div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small2'><h2>Love Potion</h2></div>
+                <img class='smaller2' src='Ricks_Love_Potion.jpg' alt='love_potion'>
+                <p class='description'> A potion that would make anyone fall in love with them except for people who are genetically
+                related to that person. **WARNING** DO NOT USE ON SOMEONE WHO HAS THE FLU!
+                </p>
+                <div class='price'>Price: $2000 </div>
+                <div class='demo'>
+                    <a href='https://youtu.be/Q6t3tENVMdc?t=141'>Demo of the Product</a>
+                </div>
+                <div class='button'>
+                    <button type='submit' onclick="myFunction() " class='btn btn-default'>Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small3'><h2>Combat Suit</h2></div>
+                <img class='smaller3'src='combat_suit.jpg' alt='combat_suit'>
+                <p class='description'> A full body armor that protects the user from basic cutting weapons, and enhances the user's strength.
+                The suits also include missiles, guns a flame throew and other trinkets you can find out for yourself. **WARNING** Must be 21
+                years or older and have special permit only allowed by me.
+
+                </p>
+                <div class='price'>Price: $6000</div>
+                <div class='demo'>
+                    <a href='https://youtu.be/wWjv3omrBd4?t=46'>Demo of the Product</a>
+                </div>
+                <div class='button'>
+                    <button type='submit' onclick="myFunction()" class='btn btn-default'>Add to cart</button>
+                </div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small4'><h2>Space Cruiser</h2></div>
+                <img class='smaller4' src='space_cruiser 2.png' alt='space cruiser'>
+                <p class='description'> Flying created by me that was piece together by random materials found in my garage. It will get you
+                from point A to point B very quickly and without any real trouble. It also has a built-in security system. It is actually kind
+                of a piece of junk.
+                </p>
+                <div class='price'>Price: $10000</div>
+                <div class='demo'>
+                    <a href='https://www.youtube.com/watch?v=m0PuqSMB8uU'>Demo of the Product</a>
+                </div>
+                <div class='button'>
+                    <button type='submit' onclick="myFunction()" class='btn btn-default'>Add to cart</button>
+                </div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small5'><h2>Meseeks Box</h2></div>
+                <img class='smaller5' src='meeseeks.jpg' alt='meseeks'>
+                <p class='description'> This is not my exact invention but it still one of the great tools I have. This box is able to create 
+                a Mr. Meeseeks that will do your bidding. Please try to keep it simple and sweet. That is the key here.  
+                </p>
+                <div class='price'>Price: $3000</div>
+                <div class='demo'>
+                    <a href='https://www.youtube.com/watch?v=qUYvIAP3qQk'> Demo of the Product</a>
+                </div>
+                <div class='button'>
+                    <button type='submit' onclick="myFunction()" class='btn btn-default'>Add to cart</button>
+                </div>
+            </div>
+            <div class='subcontents ms-6 sm-12'>
+                <div class='small6'><h2>Portal Gun</h2></div>
+                <img class='smaller6'src='portal gun.png' alt='portal gun'>
+                <p class='description'>A gun that shoots out green fluid on any surface to create a portal to travel anywhere. When I say
+                anywhere I meant anywhere at any give time. This is a ... SIKE! There is no way that I would sell this invention so you people
+                can get your slimy hands on it. Up yours!
+                </p>
+                <div class='price'>Price: Never in your dreams</div>
+                <div class='demo'>
+                    <a href='https://youtu.be/Qvez47mf5K0'> Demo of the Product</a>
+                </div>
+                <div class='button'>
+                    <button type='submit' onclick="myFunction()" class='btn btn-default'>Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
